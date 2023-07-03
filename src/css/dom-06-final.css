@@ -1,0 +1,38 @@
+:root {
+    --app-font: sans-serif;
+    --app-font-size: 16px;
+
+    --app-icon-fill: 0;
+
+    --app-primary-color: ;
+    --app-warn-color: ;
+
+    font-family: var(--app-font);
+    font-size: var(--app-font-size);
+}
+
+button {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 4px;
+    column-gap: 4px;
+
+    font-weight: bold;
+}
+
+button > * {
+    pointer-events: none;
+}
+
+.app-primary {
+    color: var(--app-primary-color)
+}
+
+.app-cl-warn {
+    color: var(--app-warn-color);
+
+    --app-icon-fill: 1;
+    
+}
