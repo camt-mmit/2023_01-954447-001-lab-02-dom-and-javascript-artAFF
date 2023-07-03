@@ -82,7 +82,7 @@ input[tpye=number]
     margin-right: 1ch;
 }
 
-.app.cmp-input-title {
+.app-cmp-input-title {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
