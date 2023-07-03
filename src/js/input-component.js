@@ -35,11 +35,11 @@ export function createComponent(componentElement) {
           elem.textContent = `${i + 1}`;
         });
       });
+
+      [...inputList.querySelectorAll(".app-cmd-remove-input")].forEach(
+        (elem) => (elem.disabled = children.length === 1)
+      );
     };
-  
-    [...inputList.querySelectorAll(".app-cmd-remove-input")].forEach(
-      (elem) => (elem.disabled = children.length === 1)
-    );
   
     const createElement = () => {
       const container = tempInput.content.cloneNode(true).firstElementChild;
@@ -72,7 +72,10 @@ export function createComponent(componentElement) {
     });
   
     inputList.append(createElement());
+    updateList();
   }
   
   // npx http-server -c0 ()
+
+  
   

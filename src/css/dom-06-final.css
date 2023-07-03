@@ -6,7 +6,7 @@
 
     --app-icon-fill: 0;
 
-    --app-primary-color: black;
+    --app-primary-color: blue;
     --app-warn-color: red;
 
     font-family: var(--app-font);
@@ -57,6 +57,7 @@ input[tpye=number]
 }
 
 .app-main-container,
+.app-cmp-section-list,
 .app-cmp-input-list {
     display: flex;
     flex-direction: column;
