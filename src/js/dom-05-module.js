@@ -73,4 +73,8 @@ export function createComponent(componentElement) {
   inputList.append(createElement());
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  createComponent(document.body);
+});
+
 // npx http-server -c0 ()
