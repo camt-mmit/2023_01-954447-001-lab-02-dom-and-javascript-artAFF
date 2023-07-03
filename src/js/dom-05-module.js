@@ -20,6 +20,7 @@ export function createComponent(componentElement) {
         elem.value = result.toLocaleString();
       }
     );
+
   };
 
   const updateList = () => {
@@ -58,8 +59,8 @@ export function createComponent(componentElement) {
   };
 
   componentElement.addEventListener("click", (ev) => {
-    if (ev.target.matches(".app-cmd-add-input")) {
-      inputsList.append(createElement());
+    if (ev.target.matches(".app-cmp-add-input")) {
+      inputList.append(createElement());
       updateList();
     }
   });

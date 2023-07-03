@@ -2,10 +2,12 @@
     --app-font: sans-serif;
     --app-font-size: 16px;
 
+    --app-font-mono: monospace;
+
     --app-icon-fill: 0;
 
-    --app-primary-color: ;
-    --app-warn-color: ;
+    --app-primary-color: black;
+    --app-warn-color: red;
 
     font-family: var(--app-font);
     font-size: var(--app-font-size);
@@ -26,6 +28,16 @@ button > * {
     pointer-events: none;
 }
 
+input[tpye=number]
+.app-cl-number {
+    font-family: var(--app-font-mono);
+    text-align: right;
+}
+
+.app-cl-dummy {
+    visibility: hidden !important;
+}
+
 .app-primary {
     color: var(--app-primary-color)
 }
@@ -44,7 +56,14 @@ button > * {
     --app-icon-fill:1;
 }
 
-.app-cmp-input-container {
+.app-main-container,
+.app-cmp-input-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-cmp-input-container,
+.app-cmp-input-container > label {
     display: inline-flex;
     flex-direction: row;
     align-items: stretch;
@@ -52,15 +71,43 @@ button > * {
 
 .app-cmp-input-container > label {
     flex: 1 0 auto;
-    align-items: center;
+}
+
+.app-cmp-input-title::after {
+    content: '::';
+    color: var(--app-primary-color);
+    font-weight: bold;
+
+    margin-left: auto;
+    margin-right: 1ch;
 }
 
 .app.cmp-input-title {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+
+    width: 15ch;
 }
 
-.app.cmp-input {
+.app-cmp-input-no {
+    display: inline-block;
+    flex-direction: row;
+    margin-left: 1ch;
+    margin-right: 1ch;
+
+    width: 3ch;
+}
+
+.app-cmp-input,
+.app-cmp-result {
     flex: 1 0 auto;
+}
+
+.app-cmp-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-right: 2ch;
 }
