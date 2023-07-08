@@ -74,31 +74,4 @@ export function createComponent(componentElement) {
   updateList();
 }
 
-//Lab
-window.addEventListener("DOMContentLoaded", function () {
-  const sectionList = document.querySelectorAll("section");
-
-  sectionList.forEach(function (section) {
-    const removeSectionButton = section.querySelector(
-      ".app-cmd-remove-section"
-    );
-    removeSectionButton.addEventListener("click", function () {
-      section.remove();
-    });
-
-    const inputList = section.querySelector(".app-cmp-input-list");
-    const addInputButton = section.querySelector(".app-cmp-add-input");
-    addInputButton.addEventListener("click", function () {
-      const inputTemplate = inputList.querySelector(".app-temp-input");
-      const input = inputTemplate.content.cloneNode(true).firstElementChild;
-
-      const removeInputButton = input.querySelector(".app-cmd-remove-input");
-      removeInputButton.addEventListener("click", function () {
-        input.remove();
-      });
-
-      inputList.appendChild(input);
-    });
-  });
-});
 // npx http-server -c0 ()
