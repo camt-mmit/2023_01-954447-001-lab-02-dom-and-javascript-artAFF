@@ -45,6 +45,12 @@ input[type="number"] .app-cl-number {
   max-width: 500px;
 }
 
+.app-cmp-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 .app-cl-dummy {
   visibility: hidden !important;
 }
