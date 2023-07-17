@@ -1,5 +1,8 @@
-import { createComponent } from "./input-component.js";
+import { createSectionComponent } from "./section-component.js";
 
-createComponent(document.body);
+
+createSectionComponent(document.body);
+
+
 
 // npx gh-pages -d src

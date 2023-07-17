@@ -50,10 +50,6 @@ export function createComponent(componentElement) {
       }
     });
 
-    container
-      .querySelector('input[type="number"].app-cmp-input')
-      .addEventListener("change", updateResult);
-
     return container;
   };
 
