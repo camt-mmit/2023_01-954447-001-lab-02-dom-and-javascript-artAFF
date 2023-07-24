@@ -58,7 +58,7 @@ button > * {
   color: var(--app-warn-color);
 }
 
-input[type="number"],
+input[type='number'],
 .app-cl-number {
   font-family: monospace;
   text-align: right;
@@ -116,7 +116,7 @@ input[type="number"],
 }
 
 .app-cmp-input-title::after {
-  content: "::";
+  content: '::';
   padding-left: 1ch;
   padding-right: 1ch;
 
@@ -149,4 +149,18 @@ input[type="number"],
   margin-right: 1.5ch;
 
   text-decoration: underline double #000000;
+}
+
+.section-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-section {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
